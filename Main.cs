@@ -53,6 +53,8 @@ namespace Cselian.Sublime
 			LineIndex += 1;
 			if (LineIndex == Lines.Length)
 				LineIndex = 0;
+
+			secsLeft = (int)Math.Ceiling(timer.Interval / 1000);
 		}
 
 		private void btnSave_Click(object sender, System.EventArgs e)
@@ -63,9 +65,9 @@ namespace Cselian.Sublime
 
 		private void tmrSecs_Tick(object sender, EventArgs e)
 		{
+			if (chkPause.Checked) return;
 			secsLeft -= 1;
 			lblSecsLeft.Text = secsLeft.ToString() + " remaining";
-			if (secsLeft == 0) secsLeft = (int)Math.Ceiling(timer.Interval / 1000);
 		}
 	}
 }
