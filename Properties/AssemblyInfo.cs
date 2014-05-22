@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Cselian.Sublime")]
 [assembly: AssemblyDescription("Shows subliminal messages")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("cselian.com")]
 [assembly: AssemblyProduct("Cselian.Sublime")]
 [assembly: AssemblyCopyright("Copyright © cselian.com 2014")]
 [assembly: AssemblyTrademark("")]
