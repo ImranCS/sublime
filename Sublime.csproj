@@ -7,8 +7,8 @@
     <ProjectGuid>{58A245BF-D3E4-4C70-BD78-F9B55B29B8F9}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Sublime</RootNamespace>
-    <AssemblyName>Sublime</AssemblyName>
+    <RootNamespace>Cselian.Sublime</RootNamespace>
+    <AssemblyName>Cselian.Sublime</AssemblyName>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
