@@ -34,5 +34,10 @@ namespace Cselian.Sublime
 				Hide();
 			}
 		}
+
+		public void SetTimeOn(int duration)
+		{
+			tmrTick.Interval = duration;
+		}
 	}
 }

@@ -36,6 +36,8 @@
 			this.txtInterval = new System.Windows.Forms.TextBox();
 			this.tmrSecs = new System.Windows.Forms.Timer(this.components);
 			this.lblSecsLeft = new System.Windows.Forms.Label();
+			this.txtTimeOn = new System.Windows.Forms.TextBox();
+			this.lblTimeOn = new System.Windows.Forms.Label();
 			this.SuspendLayout();
 			// 
 			// txtLines
@@ -55,9 +57,9 @@
 			// btnSave
 			// 
 			this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.btnSave.Location = new System.Drawing.Point(247, 12);
+			this.btnSave.Location = new System.Drawing.Point(278, 12);
 			this.btnSave.Name = "btnSave";
-			this.btnSave.Size = new System.Drawing.Size(75, 23);
+			this.btnSave.Size = new System.Drawing.Size(44, 23);
 			this.btnSave.TabIndex = 3;
 			this.btnSave.Text = "&Save";
 			this.btnSave.UseVisualStyleBackColor = true;
@@ -76,15 +78,15 @@
 			// lblInterval
 			// 
 			this.lblInterval.AutoSize = true;
-			this.lblInterval.Location = new System.Drawing.Point(117, 17);
+			this.lblInterval.Location = new System.Drawing.Point(105, 17);
 			this.lblInterval.Name = "lblInterval";
-			this.lblInterval.Size = new System.Drawing.Size(47, 13);
+			this.lblInterval.Size = new System.Drawing.Size(29, 13);
 			this.lblInterval.TabIndex = 1;
-			this.lblInterval.Text = "seconds";
+			this.lblInterval.Text = "secs";
 			// 
 			// txtInterval
 			// 
-			this.txtInterval.Location = new System.Drawing.Point(74, 13);
+			this.txtInterval.Location = new System.Drawing.Point(65, 13);
 			this.txtInterval.Name = "txtInterval";
 			this.txtInterval.Size = new System.Drawing.Size(37, 20);
 			this.txtInterval.TabIndex = 2;
@@ -100,17 +102,37 @@
 			// lblSecsLeft
 			// 
 			this.lblSecsLeft.AutoSize = true;
-			this.lblSecsLeft.Location = new System.Drawing.Point(170, 17);
+			this.lblSecsLeft.Location = new System.Drawing.Point(136, 17);
 			this.lblSecsLeft.Name = "lblSecsLeft";
-			this.lblSecsLeft.Size = new System.Drawing.Size(67, 13);
+			this.lblSecsLeft.Size = new System.Drawing.Size(36, 13);
 			this.lblSecsLeft.TabIndex = 1;
-			this.lblSecsLeft.Text = "10 remaining";
+			this.lblSecsLeft.Text = "10 left";
+			// 
+			// txtTimeOn
+			// 
+			this.txtTimeOn.Location = new System.Drawing.Point(187, 12);
+			this.txtTimeOn.Name = "txtTimeOn";
+			this.txtTimeOn.Size = new System.Drawing.Size(37, 20);
+			this.txtTimeOn.TabIndex = 6;
+			this.txtTimeOn.Text = "100";
+			this.txtTimeOn.TextChanged += new System.EventHandler(this.txtTimeOn_TextChanged);
+			// 
+			// lblTimeOn
+			// 
+			this.lblTimeOn.AutoSize = true;
+			this.lblTimeOn.Location = new System.Drawing.Point(227, 16);
+			this.lblTimeOn.Name = "lblTimeOn";
+			this.lblTimeOn.Size = new System.Drawing.Size(35, 13);
+			this.lblTimeOn.TabIndex = 5;
+			this.lblTimeOn.Text = "ms on";
 			// 
 			// Main
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(334, 162);
+			this.Controls.Add(this.txtTimeOn);
+			this.Controls.Add(this.lblTimeOn);
 			this.Controls.Add(this.txtInterval);
 			this.Controls.Add(this.lblSecsLeft);
 			this.Controls.Add(this.lblInterval);
@@ -134,6 +156,8 @@
 		private System.Windows.Forms.TextBox txtInterval;
 		private System.Windows.Forms.Timer tmrSecs;
 		private System.Windows.Forms.Label lblSecsLeft;
+		private System.Windows.Forms.TextBox txtTimeOn;
+		private System.Windows.Forms.Label lblTimeOn;
 	}
 }
 

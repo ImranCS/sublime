@@ -12,6 +12,7 @@ namespace Cselian.Sublime
 
 		private const string MessagesFile = "sublime-messages.txt";
 		private const string IntervalFile = "sublime-interval.txt";
+		private const string TimeOnFile = "sublime-timeon.txt";
 
 		public Main()
 		{
@@ -21,6 +22,7 @@ namespace Cselian.Sublime
 			Lines = txtLines.Text.Split(new[] { Environment.NewLine }, StringSplitOptions.None);
 			
 			popup = new Popup();
+			if (File.Exists(TimeOnFile)) popup.SetTimeOn(int.Parse(File.ReadAllText(TimeOnFile)));
 
 			if (File.Exists(IntervalFile)) secsLeft = int.Parse(File.ReadAllText(IntervalFile));
 			txtInterval.Text = secsLeft.ToString();
@@ -40,6 +42,12 @@ namespace Cselian.Sublime
 			secsLeft = int.Parse(txtInterval.Text);
 			timer.Interval = secsLeft * 1000;
 			File.WriteAllText(IntervalFile, txtInterval.Text);
+		}
+
+		private void txtTimeOn_TextChanged(object sender, EventArgs e)
+		{
+			popup.SetTimeOn(int.Parse(txtTimeOn.Text));
+			File.WriteAllText(TimeOnFile, txtTimeOn.Text);
 		}
 
 		private void timer_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
