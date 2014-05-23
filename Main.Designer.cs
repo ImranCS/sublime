@@ -57,7 +57,7 @@
 			// btnSave
 			// 
 			this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.btnSave.Location = new System.Drawing.Point(278, 12);
+			this.btnSave.Location = new System.Drawing.Point(278, 13);
 			this.btnSave.Name = "btnSave";
 			this.btnSave.Size = new System.Drawing.Size(44, 23);
 			this.btnSave.TabIndex = 3;
@@ -78,7 +78,7 @@
 			// lblInterval
 			// 
 			this.lblInterval.AutoSize = true;
-			this.lblInterval.Location = new System.Drawing.Point(105, 17);
+			this.lblInterval.Location = new System.Drawing.Point(117, 18);
 			this.lblInterval.Name = "lblInterval";
 			this.lblInterval.Size = new System.Drawing.Size(29, 13);
 			this.lblInterval.TabIndex = 1;
@@ -86,7 +86,7 @@
 			// 
 			// txtInterval
 			// 
-			this.txtInterval.Location = new System.Drawing.Point(65, 13);
+			this.txtInterval.Location = new System.Drawing.Point(74, 14);
 			this.txtInterval.Name = "txtInterval";
 			this.txtInterval.Size = new System.Drawing.Size(37, 20);
 			this.txtInterval.TabIndex = 2;
@@ -102,7 +102,7 @@
 			// lblSecsLeft
 			// 
 			this.lblSecsLeft.AutoSize = true;
-			this.lblSecsLeft.Location = new System.Drawing.Point(136, 17);
+			this.lblSecsLeft.Location = new System.Drawing.Point(152, 18);
 			this.lblSecsLeft.Name = "lblSecsLeft";
 			this.lblSecsLeft.Size = new System.Drawing.Size(36, 13);
 			this.lblSecsLeft.TabIndex = 1;
@@ -110,7 +110,7 @@
 			// 
 			// txtTimeOn
 			// 
-			this.txtTimeOn.Location = new System.Drawing.Point(187, 12);
+			this.txtTimeOn.Location = new System.Drawing.Point(194, 14);
 			this.txtTimeOn.Name = "txtTimeOn";
 			this.txtTimeOn.Size = new System.Drawing.Size(37, 20);
 			this.txtTimeOn.TabIndex = 6;
@@ -120,7 +120,7 @@
 			// lblTimeOn
 			// 
 			this.lblTimeOn.AutoSize = true;
-			this.lblTimeOn.Location = new System.Drawing.Point(227, 16);
+			this.lblTimeOn.Location = new System.Drawing.Point(237, 18);
 			this.lblTimeOn.Name = "lblTimeOn";
 			this.lblTimeOn.Size = new System.Drawing.Size(35, 13);
 			this.lblTimeOn.TabIndex = 5;

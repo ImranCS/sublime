@@ -22,7 +22,11 @@ namespace Cselian.Sublime
 			Lines = txtLines.Text.Split(new[] { Environment.NewLine }, StringSplitOptions.None);
 			
 			popup = new Popup();
-			if (File.Exists(TimeOnFile)) popup.SetTimeOn(int.Parse(File.ReadAllText(TimeOnFile)));
+			if (File.Exists(TimeOnFile))
+			{
+				txtTimeOn.Text = File.ReadAllText(TimeOnFile);
+				popup.SetTimeOn(int.Parse(txtTimeOn.Text));
+			}
 
 			if (File.Exists(IntervalFile)) secsLeft = int.Parse(File.ReadAllText(IntervalFile));
 			txtInterval.Text = secsLeft.ToString();
@@ -75,7 +79,7 @@ namespace Cselian.Sublime
 		{
 			if (chkPause.Checked) return;
 			secsLeft -= 1;
-			lblSecsLeft.Text = secsLeft.ToString() + " remaining";
+			lblSecsLeft.Text = secsLeft.ToString() + " left";
 		}
 	}
 }
